@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Sale</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
 
+  </style>
 </head>
 <body>
-    
-</body>
 
-<script src="script.js"></script>
+
+
+  <header>🍩 Donut Sale - Grab Your Favorite!</header>
+
+  <div class="donut-container">
+    <div class="donut">
+      <img src="images\strawberry donut.png" alt="Strawberry Donut">
+      <h3>Strawberry Donut</h3>
+      <p class="price">
+        <span class="original-price">₱285.00</span>
+        <span class="sale-price">₱142.00</span>
+      </p>
+      <button class="buy-button" onclick="buyDonut('Strawberry')">Buy Now</button>
+    </div>
+    <div class="donut">
+      <img src="images\lemon donut.png" alt="Lemon Donut">
+      <h3>Lemon Donut</h3>
+      <p class="price">
+        <span class="original-price">₱285.00</span>
+        <span class="sale-price">₱142.00</span>
+      </p>
+      <button class="buy-button" onclick="buyDonut('Lemon')">Buy Now</button>
+    </div>
+    <div class="donut">
+      <img src="images\mint donut.png" alt="Mint Donut">
+      <h3>Mint Donut</h3>
+      <p class="price">
+        <span class="original-price">₱285.00</span>
+        <span class="sale-price">₱142.00</span>
+      </p>
+      <button class="buy-button" onclick="buyDonut('Mint')">Buy Now</button>
+    </div>
+  </div>
+  <script>
+    function buyDonut(flavor) {
+      alert(`You selected the ${flavor} Donut! Yum! 🍩`);
+    }
+  </script>
+</body>
 </html>
