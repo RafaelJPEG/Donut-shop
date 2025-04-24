@@ -1,0 +1,63 @@
+body {
+font-family: 'Arial', sans-serif;
+background-color: #ffeef6;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+header {
+width: 100%;
+padding: 1rem 0;
+text-align: center;
+color: rgb(206, 19, 150);
+font-size: 2rem;
+}
+.donut-container {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin: 2rem 0;
+}
+.donut {
+background: linear-gradient(135deg, #fffafd 60%, #ffe0ec);
+padding: 1rem;
+border-radius: 1rem;
+box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+text-align: center;
+transition: transform 0.3s;
+width: 220px;
+}
+.donut:hover {
+transform: scale(1.10);
+}
+.donut img {
+width: 180px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 1rem;
+}
+.price {
+font-size: 1rem;
+margin: 0.5rem 0;
+}
+.original-price {
+text-decoration: line-through;
+color: #888;
+margin-right: 0.5rem;
+}
+.sale-price {
+color: #f78fb3;
+font-weight: bold;
+}
+.buy-button {
+margin-top: 1rem;
+padding: 0.5rem 1rem;
+background-color: #f78fb3;
+color: white;
+border: none;
+border-radius: 0.5rem;
+cursor: pointer;
